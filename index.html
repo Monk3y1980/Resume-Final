@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kube.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title>Evgeny Eysner</title>
+</head>
+<body>
+    <!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">Evgeny Eysner</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">обо мне</a></li>
+				        <li><a href="#experiences">Опыт</a></li>
+				        <li><a href="#achievements">Достижения</a></li>
+				        <li><a href="#skills">Навыки и умения</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Привет, меня зовут Евгений!</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="images/ava.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>и я живу в<br><span id="typed"></span></h1>
+				</div>
+				<q>
+				Математики думают, что Бог в уравнениях, нейрологи уверены, что Бог в мозге, а программисты уверены, что Бог — один из них.
+				<p>- Морган Фримен
+				</q>
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Работа<br>Опыт</h1>
+			<ul class="work-list">
+				<li>2014-2015</li>
+				<li><a href="#">Google Kalifornien</a></li>
+				<li>Front-End разработчик</li>
+			</ul>
+			<ul class="work-list">
+				<li>2016-2017</li>
+				<li><a href="#">BrainGarden</a></li>
+				<li>Python Developer</li>
+			</ul>
+			<ul class="work-list">
+				<li>2014-2015</li>
+				<li><a href="#">Garuda Indonesia</a></li>
+				<li>Python/ Django Developer</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Achievements -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Достижения</h1>
+			<ul class="award-list list-flat">
+				<li>Январь 2015</li>
+				<li>Сертификация HTML5 CSS3</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>Декабрь 2016</li>
+				<li>Идейные соображения высшего порядка,</li>
+				<li>а также новая модель организационной деятельности обеспечивает широкому</li>
+				<li>кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>Март 2017</li>
+				<li>Сертификация Python</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>Октябрь 2021</li>
+				<li>Сертификация Django Backenddeveloper</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Технические <br> навыки</h1>
+			<ul class="skill-list list-flat">
+				<li>Веб-технологии</li>
+				<li>HTML / CSS / SASS / Python / Javascript/</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>База данных</li>
+				<li>MySQL / MongoDB / Postgres</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Framework</li>
+				<li>Django / Flask / React.js / Vue.js</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Quote -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>Простота — залог надежности.</h1>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Created by Evgeny</p>
+			    </div>
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="#"><i class="fa fa-send"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["Германии", "Нижняя Саксония", "г. Ольденбург"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
